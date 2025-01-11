@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Registration Account</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Registration Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
 <body>
   <header class="header">
-  <h1 id="title" class="text-center">Registration Account</h1>
-  <p id="description" class="description-center">Thank you for taking the time to create an account on our website.</p>
+  <h1 id="title">Registration Account</h1>
+  <p id="description" class="desc">Thank you for taking the time to create an account on our website.</p>
   </header>
+    <main>
     <form id="survey-form">
-      <div class="form-group">
+      <div class="form-personal">
         <label id="name-label" for="name">Name</label>
         <input class="form-control"id="name" type="text" placeholder="Enter your name" required/>
       </div>
-      <div class="form-group">
+      <div class="form-personal">
         <label id="email-label" for="email">Email</label>
         <input class="form-control" id="email" type="email" placeholder="Enter your Email" required/>
       </div>
-      <div class="form-group">
+      <div class="form-personal">
         <label id="number-label" for="number">Age (optional)</label>
         <input class="form-control" id="number" type="number" placeholder="Age" min="13" max="40"/>
       </div>
-      <div class="form-group">
       <p>What is your favorite thing?</p>
-      <select id="dropdown" name="dropdown" class="form-control" required>
+      <div>
+      <select id="dropdown" name="dropdown"required>
         <option disabled selected value>Select an option</option>
-        <option value="adventure">Adventure</option>
-        <option value="bonus">Bonus</option>
-        <option value="story">Story</option>
-        <option value="gameplay">Gameplay</option>
+        <option value="programing">Programing</option>
+        <option value="multimedia">Multimedia</option>
+        <option value="IoT">IoT</option>
+        <option value="network">Network Engineer</option>
       </select>
       </div>
-      <div class="form-group>">
-        <p>How did you find out about our website?</p>
+      <p>How did you find out about our website?</p>
+      <div class="form-group">
         <div class="sosmed">
         <label>
           <input class="radio" type="radio" name="survey-form" value="YouTube" checked> YouTube
@@ -46,8 +52,8 @@
         </label>
         </div>
       </div>
+      <p>Who would you recommend our website to?</p>
       <div class="form-group">
-        <p>Who would you recommend our website to?</p>
         <div class="sosmed">
         <label>
           <input class="checkbox" type="checkbox" name="survey-form" value="friend" checked> Friend
@@ -58,12 +64,14 @@
         <label>
           <input class="checkbox" type="checkbox" name="survey-form" value="other"> other
         </label>
+        </div>
       </div>
+      <p>What do you think about us?</p>
       <div class="form-group">
-        <p>What do you think about us?</p>
         <textarea class="mind" placeholder="I love this website because..."></textarea>
        </div>
       </div>
       <div class="form-group">
         <input id="submit" type="submit" class="submit-button">
+      </main>
 </html>
